@@ -16,6 +16,13 @@
 <p>I am a computer science student at UC San Diego. I enjoy asking questions about basketball and exploring how data can help answer them.</p>
 <p>This portfolio brings together my coursework, an NBA research case study, and my practice building clear, semantic websites.</p>
 <p><a href="projects.html">Explore my projects</a> | <a href="resume.html">Read my resume overview</a></p>
+<section id="cat-fact-explorer" aria-labelledby="cat-fact-heading">
+<h2 id="cat-fact-heading">Cat fact explorer</h2>
+<p>Browse a few sample facts or request a new fact from the Cat Facts API.</p>
+<cat-fact-panel style="--fact-panel-background: var(--surface, #fff); --fact-panel-text: var(--text, #243344); --fact-panel-border: var(--border, #cbd5de); --fact-panel-accent: var(--accent, #175d68);"></cat-fact-panel>
+<p><button id="cat-fact-mode-toggle" type="button" aria-pressed="false" hidden>Use compact display</button></p>
+<noscript><p>Enable JavaScript to load live data and use the cat fact explorer. The rest of the portfolio remains available.</p></noscript>
+</section>
 <section class="featured-work"><h2>Featured work</h2>
 <project-summary><h3>NBA workload, shooting efficiency, and availability</h3><p>A COGS 108 team project investigating whether high minutes in dense schedules are associated with later performance and availability.</p><p>My documented roles: project administration and experimental investigation.</p><a href="project-web.html">Read the NBA case study</a></project-summary>
 <project-summary><h3>This portfolio</h3><p>An HTML-first website planned around a recruiter persona, consistent navigation, and detailed project context.</p><a href="projects.html#portfolio">Read about the portfolio build</a></project-summary>
@@ -23,5 +30,6 @@
 <section><h2>How I approach learning</h2><p>I want to understand both the calculation and the interpretation. In data analysis, an unexpected result is a reason to examine assumptions rather than force the original hypothesis.</p><p><a href="about.html">More about me</a></p></section>
 </main>
 <footer><p><a href="contact.html">Contact</a> | <a href="https://github.com/hac098-cloud">GitHub</a> | <a href="experiments.html">Experiments</a></p><p>Haolong Chen - UC San Diego</p></footer>
+<script src="cat-fact-panel.js" defer></script>
 </body>
 </html>

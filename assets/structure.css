@@ -120,6 +120,21 @@ project-summary, .project-card {
 }
 project-summary > h3 { margin-top: 0; }
 main > article + article { margin-top: var(--space); }
+cat-fact-panel { display: block; margin-block: 1rem; }
+.cat-fact-panel__card {
+  padding: var(--space);
+  border: 1px solid var(--fact-panel-border, #cbd5de);
+  border-top: 0.25rem solid var(--fact-panel-accent, #175d68);
+  border-radius: 0.5rem;
+  color: var(--fact-panel-text, #243344);
+  background: var(--fact-panel-background, #fff);
+}
+.cat-fact-panel__card h3 { margin-top: 0; }
+.cat-fact-panel__fact { min-height: 3.4em; }
+.cat-fact-panel__details { color: var(--muted, #516173); }
+.cat-fact-panel__status { min-height: 1.7em; font-weight: 600; }
+.cat-fact-panel__controls { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.cat-fact-panel__controls button:disabled { cursor: wait; opacity: 0.7; }
 img, video, svg, canvas { max-width: 100%; height: auto; }
 picture { display: block; margin-block: var(--space); }
 picture img { display: block; border: 1px solid var(--border); border-radius: 0.5rem; }

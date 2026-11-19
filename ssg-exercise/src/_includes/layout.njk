@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ description }}">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/structure.css">
+</head>
+<body>
+  <header>
+    <p><a href="/">Haolong Chen</a> - Computer Science Student</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
+        <li><a href="/about/" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About</a></li>
+        <li><a href="https://animated-axolotl-b2c8d8.netlify.app/projects.html">Projects</a></li>
+        <li><a href="https://animated-axolotl-b2c8d8.netlify.app/resume.html">Resume</a></li>
+        <li><a href="https://animated-axolotl-b2c8d8.netlify.app/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+  <footer>
+    <p><a href="https://github.com/hac098-cloud">GitHub</a> | CSE 134B Homework 5 SSG exercise</p>
+  </footer>
+</body>
+</html>
