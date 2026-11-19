@@ -120,7 +120,14 @@ project-summary, .project-card {
 }
 project-summary > h3 { margin-top: 0; }
 main > article + article { margin-top: var(--space); }
-cat-fact-panel { display: block; margin-block: 1rem; }
+cat-fact-panel {
+  --fact-panel-background: var(--surface, #fff);
+  --fact-panel-text: var(--text, #243344);
+  --fact-panel-border: var(--border, #cbd5de);
+  --fact-panel-accent: var(--accent, #175d68);
+  display: block;
+  margin-block: 1rem;
+}
 .cat-fact-panel__card {
   padding: var(--space);
   border: 1px solid var(--fact-panel-border, #cbd5de);
